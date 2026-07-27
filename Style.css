@@ -1,0 +1,1177 @@
+/*==============================
+ Navbar
+==============================*/
+
+.navbar{
+
+    background:#1b1b1b;
+
+    padding:18px 0;
+
+}
+
+/* Logo */
+
+.logo{
+
+    width:70px;
+
+    transition:.4s;
+
+}
+
+.logo:hover{
+
+    transform:rotate(-8deg) scale(1.08);
+
+}
+
+/* Menu */
+
+.navbar-nav{
+
+    gap:18px;
+
+}
+
+.nav-link{
+
+    color:#fff !important;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+/* Hover */
+
+.nav-link:hover{
+
+    color:#00E5FF !important;
+
+}
+
+/* Underline */
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-5px;
+
+    width:0;
+
+    height:2px;
+
+    background:#00E5FF;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover::after{
+
+    width:100%;
+
+}
+
+/* Active Link */
+
+.nav-link.active{
+
+    color:#00E5FF !important;
+
+}
+
+/* Resume Button */
+
+.resume-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:8px 18px;
+
+    background:#00E5FF;
+
+    color:#111;
+
+    border-radius:4px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.resume-btn:hover{
+
+    background:#ffffff;
+
+    color:#111;
+
+    transform:translateY(-3px);
+
+}
+
+.resume-btn i{
+
+    font-size:14px;
+
+}
+
+/* Remove Bootstrap Outline */
+
+.navbar-toggler{
+
+    border:none;
+
+}
+
+.navbar-toggler:focus{
+
+    box-shadow:none;
+
+}
+
+/*==============================
+ Responsive
+==============================*/
+
+@media(max-width:991px){
+
+.navbar{
+
+padding:15px 0;
+
+}
+
+.navbar-nav{
+
+text-align:center;
+
+margin-top:20px;
+
+gap:10px;
+
+}
+
+.resume-btn{
+
+margin-top:15px;
+
+display:inline-flex;
+
+}
+
+}
+
+/*=============================
+Hero Section
+==============================*/
+
+.hero-section{
+    background:#1b1b1b;
+    min-height:30vh;
+    display:flex;
+    align-items:center;
+    padding:20px 0 60px;
+}
+
+/* Left Side */
+
+.hero-content{
+
+    animation:fadeLeft 1s ease;
+
+}
+
+/* HI */
+
+.hero-title{
+
+    font-size:4.5rem;
+
+    color:#00E5FF;
+
+    font-weight:700;
+
+    line-height:1;
+
+}
+
+/* Name */
+
+.hero-name{
+
+    font-size:3.5rem;
+
+    color:#00E5FF;
+
+    font-weight:800;
+
+    margin:15px 0;
+
+    line-height:1.1;
+
+}
+
+/* Profession */
+
+.hero-designation{
+
+    font-size:2rem;
+
+    color:#ffffff;
+
+    margin-bottom:30px;
+
+}
+
+/* Paragraph */
+
+.hero-description{
+
+    color:#d3d3d3;
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+    max-width:650px;
+
+}
+
+/* Social */
+
+.hero-social{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    margin-top:35px;
+
+}
+
+.hero-social a{
+
+    color:#00E5FF;
+
+    font-size:28px;
+
+    transition:.3s;
+
+}
+
+.hero-social a:hover{
+
+    color:#ffffff;
+
+    transform:translateY(-5px);
+
+}
+
+/* Resume */
+
+.resume-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 22px;
+
+    border-radius:5px;
+
+    background:#00E5FF;
+
+    color:#111 !important;
+
+    font-size:16px !important;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.resume-btn:hover{
+
+    background:#fff;
+
+    color:#111 !important;
+
+}
+
+/* Image */
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.profile-img{
+
+    width:300px;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border:3px solid #6d6d6d;
+
+    transition:.4s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.45);
+
+}
+
+.profile-img:hover{
+
+    border-color:#00E5FF;
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 0 25px rgba(0,229,255,.4),
+
+    0 20px 40px rgba(0,0,0,.5);
+
+}
+
+/* Animation */
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero-section{
+
+text-align:center;
+
+padding-top:120px;
+
+}
+
+.hero-title{
+
+font-size:3.2rem;
+
+}
+
+.hero-name{
+
+font-size:3.8rem;
+
+}
+
+.hero-designation{
+
+font-size:1.5rem;
+
+}
+
+.hero-description{
+
+margin:auto;
+
+}
+
+.hero-social{
+
+justify-content:center;
+
+}
+
+.hero-image{
+
+margin-top:50px;
+
+}
+
+.profile-img{
+
+width:280px;
+
+height:370px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-title{
+
+font-size:2.5rem;
+
+}
+
+.hero-name{
+
+font-size:3rem;
+
+}
+
+.hero-designation{
+
+font-size:1.2rem;
+
+}
+
+.hero-description{
+
+font-size:16px;
+
+}
+
+.profile-img{
+
+width:230px;
+
+height:300px;
+
+}
+
+.hero-social{
+
+gap:20px;
+
+}
+
+.resume-btn{
+
+padding:8px 16px;
+
+font-size:14px !important;
+
+}
+
+}
+
+/*===========================
+Portfolio
+===========================*/
+
+.portfolio-section{
+
+    background:#1b1b1b;
+
+}
+
+/* Heading */
+
+.section-heading{
+
+    color:#fff;
+
+    font-size:55px;
+
+    font-weight:700;
+
+    margin-bottom:60px;
+
+}
+
+/* Card */
+
+.project-card{
+
+    border:1px solid #505050;
+
+    background:#1e1e1e;
+
+    padding:25px;
+
+    transition:.4s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 25px rgba(0,229,255,.25);
+
+}
+
+/* Image */
+
+.project-img{
+
+    border-radius:5px;
+
+    transition:.4s;
+
+}
+
+.project-card:hover .project-img{
+
+    transform:scale(1.03);
+
+}
+
+/* Content */
+
+.project-content{
+
+    padding-left:15px;
+
+}
+
+/* Title */
+
+.project-title{
+
+    color:#00E5FF;
+
+    font-size:36px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+/* Icons */
+
+.project-title a{
+
+    color:#00E5FF;
+
+    margin-left:12px;
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.project-title a:hover{
+
+    color:#fff;
+
+}
+
+/* Paragraph */
+
+.project-text{
+
+    color:#ddd;
+
+    font-size:19px;
+
+    line-height:1.7;
+
+}
+
+/* List */
+
+.project-content ul{
+
+    color:#cfcfcf;
+
+    margin-top:18px;
+
+    padding-left:20px;
+
+}
+
+.project-content li{
+
+    margin-bottom:10px;
+
+    font-size:18px;
+
+}
+
+/* Technology */
+
+.tech-stack{
+
+    margin-top:25px;
+
+}
+
+.tech-stack span{
+
+    display:inline-block;
+
+    background:#6d7178;
+
+    color:#fff;
+
+    padding:7px 14px;
+
+    margin-right:10px;
+
+    margin-bottom:10px;
+
+    border-radius:5px;
+
+    transition:.3s;
+
+}
+
+.tech-stack span:hover{
+
+    background:#00E5FF;
+
+    color:#111;
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.project-content{
+
+padding:30px 0 0;
+
+}
+
+.project-title{
+
+font-size:30px;
+
+}
+
+.section-heading{
+
+font-size:42px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.project-title{
+
+font-size:24px;
+
+}
+
+.project-text{
+
+font-size:16px;
+
+}
+
+.project-content li{
+
+font-size:15px;
+
+}
+
+.tech-stack span{
+
+font-size:13px;
+
+padding:6px 10px;
+
+}
+
+}
+
+/*===========================
+Skills Section
+===========================*/
+
+.skills-section{
+
+    background:#1b1b1b;
+
+}
+
+/* Skill Group */
+
+.skill-group{
+
+    margin-bottom:60px;
+
+}
+
+/* Heading */
+
+.skill-title{
+
+    color:#fff;
+
+    font-size:40px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+/* Tags */
+
+.skill-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+/* Badge */
+
+.skill-tags span{
+
+    background:#6f757c;
+
+    color:#fff;
+
+    padding:8px 16px;
+
+    border-radius:5px;
+
+    font-size:17px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+/* Hover */
+
+.skill-tags span:hover{
+
+    background:#00E5FF;
+
+    color:#111;
+
+    transform:translateY(-4px);
+
+}
+
+/*===========================
+Education
+===========================*/
+
+.education-card{
+
+    text-align:center;
+
+}
+
+.education-card h2{
+
+    color:#00E5FF;
+
+    font-size:60px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.education-card h4{
+
+    color:#fff;
+
+    font-size:36px;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+.education-card h5{
+
+    color:#ddd;
+
+    font-size:30px;
+
+    font-weight:500;
+
+}
+
+.education-card p{
+
+    color:#ddd;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+.education-card span{
+
+    color:#aaa;
+
+    font-size:22px;
+
+}
+
+/*===========================
+Responsive
+===========================*/
+
+@media(max-width:992px){
+
+.skill-title{
+
+font-size:34px;
+
+}
+
+.education-card{
+
+margin-top:40px;
+
+}
+
+.education-card h2{
+
+font-size:46px;
+
+}
+
+.education-card h4{
+
+font-size:28px;
+
+}
+
+.education-card h5{
+
+font-size:24px;
+
+}
+
+.education-card p{
+
+font-size:20px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.skill-title{
+
+font-size:28px;
+
+}
+
+.skill-tags span{
+
+font-size:14px;
+
+padding:6px 12px;
+
+}
+
+.education-card h2{
+
+font-size:38px;
+
+}
+
+.education-card h4{
+
+font-size:22px;
+
+}
+
+.education-card h5{
+
+font-size:18px;
+
+}
+
+.education-card p{
+
+font-size:16px;
+
+}
+
+.education-card span{
+
+font-size:16px;
+
+}
+
+}
+
+/*==========================
+Contact Section
+==========================*/
+
+.contact-section{
+    background:#1b1b1b;
+    padding:60px 0;          /* Reduced from 100px */
+}
+
+/* Title */
+
+.contact-title{
+    color:#fff;
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:35px;      /* Reduced */
+}
+
+/* Contact Box */
+
+.contact-card{
+    max-width:650px;         /* Smaller width */
+    margin:auto;
+
+    background:#202020;
+    border:1px solid #555;
+
+    padding:30px;            /* Reduced */
+
+    border-radius:8px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.45);
+
+    transition:.3s;
+}
+
+.contact-card:hover{
+    box-shadow:0 0 18px rgba(0,229,255,.2);
+}
+
+/* Input */
+
+.contact-input{
+    background:#1b1b1b;
+    border:1px solid #666;
+    color:#fff;
+
+    padding:12px 15px;
+
+    font-size:16px;
+
+    border-radius:5px;
+}
+
+.contact-input::placeholder{
+    color:#aaa;
+}
+
+.contact-input:focus{
+    background:#1b1b1b;
+    color:#fff;
+
+    border-color:#00E5FF;
+
+    box-shadow:none;
+}
+
+/* Textarea */
+
+textarea.contact-input{
+    resize:none;
+    height:120px;          /* Smaller */
+}
+
+/* Button */
+
+.send-btn{
+    width:100%;
+
+    background:#00E5FF;
+    color:#111;
+
+    border:none;
+
+    padding:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    border-radius:5px;
+
+    transition:.3s;
+}
+
+.send-btn:hover{
+    background:#fff;
+    color:#111;
+}
+
+/*==================================
+ Footer
+===================================*/
+
+.footer-section{
+
+    background:#1b1b1b;
+
+    border-top:1px solid #3a3a3a;
+
+    padding:50px 0;
+
+}
+
+/* Footer Text */
+
+.footer-content p{
+
+    color:#d5d5d5;
+
+    font-size:17px;
+
+    margin-bottom:12px;
+
+    letter-spacing:.5px;
+
+}
+
+/* Social Icons */
+
+.footer-social{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+/* Icon */
+
+.footer-social a{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#00E5FF;
+
+    font-size:24px;
+
+    border:2px solid transparent;
+
+    border-radius:50%;
+
+    transition:.4s;
+
+}
+
+/* Hover */
+
+.footer-social a:hover{
+
+    color:#fff;
+
+    border-color:#00E5FF;
+
+    background:#00E5FF;
+
+    transform:translateY(-5px);
+
+}
+
+/* Icon Color */
+
+.footer-social a:hover i{
+
+    color:#111;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.footer-section{
+
+padding:40px 0;
+
+}
+
+.footer-content p{
+
+font-size:15px;
+
+}
+
+.footer-social{
+
+gap:20px;
+
+}
+
+.footer-social a{
+
+width:40px;
+height:40px;
+font-size:20px;
+
+}
+
+}
